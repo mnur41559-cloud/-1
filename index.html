@@ -1,0 +1,2498 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>আল ইনাব ইসলামিক ফাউন্ডেশন</title>
+
+<meta name="description" content="আল ইনাব ইসলামিক ফাউন্ডেশন — ইসলামের সঠিক শিক্ষা, দাওয়াত ও কল্যাণমূলক কার্যক্রম মানুষের মাঝে পৌঁছে দেওয়ার প্রত্যয়।">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+    "Noto Sans Bengali",
+    "Hind Siliguri",
+    Arial,
+    sans-serif;
+    background:#f5faf7;
+    color:#18352c;
+    line-height:1.8;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.container{
+    width:min(1120px,92%);
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#064d3c;
+    box-shadow:0 4px 20px rgba(0,0,0,.16);
+}
+
+.header-inner{
+    min-height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#fff;
+    font-weight:800;
+    font-size:20px;
+}
+
+.brand img{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    object-fit:cover;
+    background:#fff;
+    border:2px solid #d6b45b;
+}
+
+.nav{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.nav a{
+    color:#fff;
+    padding:9px 12px;
+    border-radius:8px;
+    font-size:14px;
+    transition:.25s;
+}
+
+.nav a:hover{
+    background:rgba(255,255,255,.13);
+}
+
+.join-btn{
+    background:#d8b45b !important;
+    color:#143b2f !important;
+    font-weight:800;
+}
+
+.menu-btn{
+    display:none;
+    width:46px;
+    height:46px;
+    border:1px solid rgba(255,255,255,.25);
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    border-radius:12px;
+    font-size:25px;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    background:#003b2e;
+}
+
+.slider{
+    width:100%;
+    height:min(68vw,620px);
+    min-height:230px;
+    position:relative;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    inset:0;
+    opacity:0;
+    visibility:hidden;
+    transition:opacity .7s ease;
+}
+
+.slide.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ================= GENERAL ================= */
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:42px;
+}
+
+.section-title h2{
+    color:#07523f;
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#687c75;
+    max-width:700px;
+    margin:auto;
+}
+
+.line{
+    width:70px;
+    height:4px;
+    border-radius:10px;
+    background:#d5b35c;
+    margin:12px auto 15px;
+}
+
+/* ================= WELCOME ================= */
+
+.welcome{
+    background:#fff;
+}
+
+.welcome-box{
+    background:linear-gradient(135deg,#064e3c,#08765a);
+    color:#fff;
+    border-radius:24px;
+    padding:55px 30px;
+    text-align:center;
+    box-shadow:0 18px 45px rgba(0,60,45,.15);
+}
+
+.welcome-box .arabic{
+    font-size:28px;
+    color:#e4c878;
+    margin-bottom:10px;
+}
+
+.welcome-box h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.welcome-box p{
+    max-width:780px;
+    margin:auto;
+    color:#e9f4ef;
+    font-size:17px;
+}
+
+/* ================= CARDS ================= */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #e2eee9;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 8px 25px rgba(18,70,55,.06);
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 14px 32px rgba(18,70,55,.11);
+}
+
+.card-icon{
+    width:56px;
+    height:56px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:15px;
+    background:#eaf7f1;
+    color:#08785a;
+    font-size:27px;
+    margin-bottom:16px;
+}
+
+.card h3{
+    color:#07523f;
+    margin-bottom:8px;
+    font-size:20px;
+}
+
+.card p{
+    color:#687c75;
+    font-size:15px;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:#eef8f3;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+    align-items:center;
+}
+
+.about-image{
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,50,38,.13);
+}
+
+.about-image img{
+    width:100%;
+    aspect-ratio:1.25;
+    object-fit:cover;
+}
+
+.about-text h2{
+    font-size:31px;
+    color:#07523f;
+    margin-bottom:15px;
+}
+
+.about-text p{
+    color:#5d7169;
+    margin-bottom:15px;
+}
+
+.check-list{
+    list-style:none;
+    margin-top:20px;
+}
+
+.check-list li{
+    margin:10px 0;
+    color:#31584b;
+}
+
+.check-list li::before{
+    content:"✓";
+    color:#08785a;
+    font-weight:900;
+    margin-right:10px;
+}
+
+/* ================= NOTICE ================= */
+
+.notice-section{
+    background:#fff;
+}
+
+.notice-box{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.notice-item{
+    position:relative;
+    background:#f8fcfa;
+    border:1px solid #dfeee7;
+    border-left:5px solid #0b7658;
+    border-radius:14px;
+    padding:20px;
+}
+
+.notice-item h3{
+    color:#07523f;
+    font-size:19px;
+    padding-right:40px;
+}
+
+.notice-item p{
+    color:#61756d;
+    margin-top:5px;
+}
+
+.notice-date{
+    color:#0b7658;
+    font-size:13px;
+    margin-top:8px;
+}
+
+.notice-item img{
+    width:100%;
+    max-height:300px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-top:14px;
+}
+
+.no-notice{
+    text-align:center;
+    padding:30px;
+    color:#7a8b85;
+    border:1px dashed #c9ddd5;
+    border-radius:15px;
+}
+
+/* ================= ACTIVITIES ================= */
+
+.activities{
+    background:#f5faf7;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    background:linear-gradient(135deg,#063f31,#087458);
+    color:#fff;
+}
+
+.cta-box{
+    text-align:center;
+}
+
+.cta-box h2{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.cta-box p{
+    color:#e0eee9;
+    max-width:720px;
+    margin:0 auto 25px;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    border:none;
+    cursor:pointer;
+    padding:13px 23px;
+    border-radius:10px;
+    font-weight:800;
+    transition:.25s;
+}
+
+.btn-gold{
+    background:#d9b55d;
+    color:#173a2f;
+}
+
+.btn-white{
+    background:#fff;
+    color:#07523f;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    opacity:.92;
+}
+
+/* ================= SOCIAL ================= */
+
+.social{
+    background:#fff;
+}
+
+.social-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.social-card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:#fff;
+    border:1px solid #e2ece8;
+    border-radius:17px;
+    padding:20px;
+    box-shadow:0 8px 25px rgba(10,60,45,.06);
+    transition:.25s;
+}
+
+.social-card:hover{
+    transform:translateY(-4px);
+}
+
+.social-icon{
+    width:55px;
+    height:55px;
+    min-width:55px;
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.social-icon svg{
+    width:31px;
+    height:31px;
+    display:block;
+}
+
+.facebook-icon{
+    color:#1877f2;
+    background:#eaf2ff;
+}
+
+.whatsapp-icon{
+    color:#25d366;
+    background:#e9fff1;
+}
+
+.telegram-icon{
+    color:#229ed9;
+    background:#eaf7fd;
+}
+
+.tiktok-icon{
+    color:#111;
+    background:#f1f1f1;
+}
+
+.social-card h3{
+    color:#07523f;
+    font-size:17px;
+}
+
+.social-card p{
+    color:#7a8984;
+    font-size:12px;
+}
+
+/* ================= FAQ ================= */
+
+.faq{
+    background:#eef8f3;
+}
+
+.faq-list{
+    max-width:850px;
+    margin:auto;
+}
+
+.faq-item{
+    background:#fff;
+    border:1px solid #dfece6;
+    border-radius:13px;
+    margin-bottom:12px;
+    overflow:hidden;
+}
+
+.faq-question{
+    width:100%;
+    background:#fff;
+    border:0;
+    text-align:left;
+    padding:18px 20px;
+    font-family:inherit;
+    font-size:16px;
+    font-weight:800;
+    color:#16483a;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.faq-answer{
+    display:none;
+    padding:0 20px 18px;
+    color:#64766f;
+}
+
+.faq-item.open .faq-answer{
+    display:block;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#fff;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.contact-card{
+    border:1px solid #e0ece7;
+    border-radius:18px;
+    padding:28px;
+    background:#fbfefd;
+}
+
+.contact-card h3{
+    color:#07523f;
+    margin-bottom:12px;
+}
+
+.contact-row{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    margin:14px 0;
+    color:#526961;
+}
+
+.contact-row strong{
+    color:#16483a;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#032c22;
+    color:#d9e8e2;
+    padding:55px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:30px;
+}
+
+.footer-brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#fff;
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.footer-brand img{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:#fff;
+}
+
+footer p{
+    color:#a9c0b8;
+    font-size:14px;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.footer-links a{
+    color:#b9cec7;
+    font-size:14px;
+}
+
+.footer-links a:hover{
+    color:#e0c56d;
+}
+
+.copyright{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.09);
+    margin-top:35px;
+    padding-top:20px;
+    color:#91aaa1;
+    font-size:13px;
+}
+
+/* ================= FLOAT BUTTON ================= */
+
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25d366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+    z-index:999;
+}
+
+.whatsapp-float svg{
+    width:34px;
+    height:34px;
+}
+
+/* ================= TOP BUTTON ================= */
+
+.top-btn{
+    position:fixed;
+    right:20px;
+    bottom:92px;
+    width:48px;
+    height:48px;
+    border:0;
+    border-radius:50%;
+    background:#07523f;
+    color:#fff;
+    cursor:pointer;
+    font-size:20px;
+    z-index:998;
+}
+
+/* ================= ADMIN MODAL ================= */
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    z-index:5000;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal.show{
+    display:flex;
+}
+
+.modal-box{
+    width:min(480px,100%);
+    max-height:90vh;
+    overflow:auto;
+    background:#fff;
+    border-radius:20px;
+    padding:25px;
+    position:relative;
+    box-shadow:0 25px 70px rgba(0,0,0,.3);
+}
+
+.close-modal{
+    position:absolute;
+    top:12px;
+    right:15px;
+    width:38px;
+    height:38px;
+    border:0;
+    background:#f1f4f2;
+    border-radius:50%;
+    font-size:23px;
+    cursor:pointer;
+}
+
+.modal-box h2{
+    color:#07523f;
+    margin-bottom:5px;
+}
+
+.modal-subtitle{
+    color:#74837e;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-group label{
+    display:block;
+    color:#31564a;
+    font-weight:700;
+    font-size:14px;
+    margin-bottom:6px;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:12px 13px;
+    border:1px solid #d7e4df;
+    border-radius:10px;
+    outline:none;
+    font-family:inherit;
+    font-size:14px;
+}
+
+.form-group textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color:#0b7658;
+}
+
+.admin-panel{
+    display:none;
+}
+
+.admin-panel.show{
+    display:block;
+}
+
+.admin-actions{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:10px;
+}
+
+.admin-notices{
+    margin-top:25px;
+}
+
+.admin-notice{
+    border:1px solid #dfe9e5;
+    border-radius:12px;
+    padding:15px;
+    margin-bottom:10px;
+}
+
+.admin-notice h4{
+    color:#07523f;
+}
+
+.delete-btn{
+    margin-top:10px;
+    border:0;
+    background:#ffe8e8;
+    color:#c43c3c;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* ================= TOAST ================= */
+
+.toast{
+    position:fixed;
+    left:50%;
+    bottom:25px;
+    transform:translate(-50%,120px);
+    background:#063e30;
+    color:#fff;
+    padding:12px 18px;
+    border-radius:10px;
+    z-index:7000;
+    transition:.3s;
+    opacity:0;
+    font-size:14px;
+}
+
+.toast.show{
+    transform:translate(-50%,0);
+    opacity:1;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .nav{
+        position:absolute;
+        top:76px;
+        left:0;
+        right:0;
+        background:#064d3c;
+        padding:12px 4%;
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .nav.show{
+        display:flex;
+    }
+
+    .nav a{
+        padding:12px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .social-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:650px){
+
+    section{
+        padding:60px 0;
+    }
+
+    .header-inner{
+        min-height:68px;
+    }
+
+    .brand{
+        font-size:16px;
+    }
+
+    .brand img{
+        width:45px;
+        height:45px;
+    }
+
+    .slider{
+        height:58vw;
+        min-height:200px;
+    }
+
+    .welcome-box{
+        padding:40px 20px;
+    }
+
+    .welcome-box h1{
+        font-size:28px;
+    }
+
+    .welcome-box .arabic{
+        font-size:22px;
+    }
+
+    .section-title h2{
+        font-size:27px;
+    }
+
+    .grid,
+    .about-grid,
+    .contact-grid,
+    .social-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-text h2{
+        font-size:27px;
+    }
+
+    .cta-box h2{
+        font-size:27px;
+    }
+
+    .whatsapp-float{
+        width:56px;
+        height:56px;
+        right:16px;
+        bottom:16px;
+    }
+
+    .top-btn{
+        right:18px;
+        bottom:85px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container header-inner">
+
+        <a href="#home" class="brand">
+            <img
+                src="https://img.sanishtech.com/u/a6e7173247d01c723d9457b977d103da.png"
+                alt="আল ইনাব ইসলামিক ফাউন্ডেশন লোগো"
+            >
+            <span>আল ইনাব ইসলামিক ফাউন্ডেশন</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">
+            ☰
+        </button>
+
+        <nav class="nav" id="nav">
+
+            <a href="#home">হোম</a>
+            <a href="#about">আমাদের সম্পর্কে</a>
+            <a href="#activities">কার্যক্রম</a>
+            <a href="#notice">নোটিশ</a>
+            <a href="#gallery">গ্যালারি</a>
+            <a href="#social">যোগাযোগ মাধ্যম</a>
+
+            <a
+                class="join-btn"
+                href="https://forms.gle/nwmoKYUkD34GhVwb9"
+            >
+                সদস্য আবেদন
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO SLIDER ================= -->
+
+<section class="hero" id="home">
+
+    <div class="slider">
+
+        <div class="slide active">
+            <img
+                src="https://i.ibb.co.com/hJq1p9MN/file-00000000c534820bbbd7bce125fd2e4d.png"
+                alt="আল ইনাব ইসলামিক ফাউন্ডেশন"
+            >
+        </div>
+
+        <div class="slide">
+            <img
+                src="https://i.ibb.co.com/3gn9bC2/file-000000004a5481fd9a93105292e0ffe8.png"
+                alt="ইসলামিক শিক্ষা"
+            >
+        </div>
+
+        <div class="slide">
+            <img
+                src="https://i.ibb.co.com/1gFvtk3/file-00000000293881fabb3dea2bf16a314e.png"
+                alt="ইসলামিক কার্যক্রম"
+            >
+        </div>
+
+        <div class="slide">
+            <img
+                src="https://i.ibb.co.com/qF7mGGqM/file-00000000c76081fd866dd141219ab1d9.png"
+                alt="দাওয়াত ও শিক্ষা"
+            >
+        </div>
+
+        <div class="slide">
+            <img
+                src="https://i.ibb.co.com/4ZXq5Bks/file-00000000071c81fa86fb6f6b7.png"
+                alt="আল ইনাব ইসলামিক ফাউন্ডেশন"
+            >
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WELCOME ================= -->
+
+<section class="welcome">
+
+    <div class="container">
+
+        <div class="welcome-box">
+
+            <div class="arabic">
+                بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+            </div>
+
+            <h1>
+                আল ইনাব ইসলামিক ফাউন্ডেশনে স্বাগতম
+            </h1>
+
+            <p>
+                ইসলামের সঠিক শিক্ষা, দাওয়াত ও কল্যাণমূলক কার্যক্রম
+                মানুষের মাঝে পৌঁছে দেওয়ার প্রত্যয়ে আমাদের পথচলা।
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <img
+                    src="https://i.ibb.co.com/hJq1p9MN/file-00000000c534820bbbd7bce125fd2e4d.png"
+                    alt="ইসলামিক শিক্ষা"
+                >
+
+            </div>
+
+            <div class="about-text">
+
+                <h2>
+                    আমাদের সম্পর্কে
+                </h2>
+
+                <p>
+                    আল ইনাব ইসলামিক ফাউন্ডেশন একটি ইসলামিক শিক্ষা,
+                    দাওয়াত ও কল্যাণমূলক উদ্যোগ। ইসলামের সঠিক জ্ঞান
+                    মানুষের কাছে সহজভাবে পৌঁছে দেওয়া আমাদের অন্যতম
+                    গুরুত্বপূর্ণ লক্ষ্য।
+                </p>
+
+                <p>
+                    আমরা অনলাইনভিত্তিক বিভিন্ন শিক্ষামূলক ও
+                    সচেতনতামূলক কার্যক্রমের মাধ্যমে মানুষের মাঝে
+                    দ্বীনি জ্ঞান ছড়িয়ে দেওয়ার চেষ্টা করি।
+                </p>
+
+                <ul class="check-list">
+
+                    <li>ইসলামের সঠিক শিক্ষা প্রচার</li>
+                    <li>দাওয়াত ও দ্বীনি সচেতনতা বৃদ্ধি</li>
+                    <li>ইসলামিক জ্ঞান সহজভাবে উপস্থাপন</li>
+                    <li>কল্যাণমূলক কার্যক্রমে উৎসাহ প্রদান</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MISSION ================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>আমাদের লক্ষ্য ও উদ্দেশ্য</h2>
+
+            <div class="line"></div>
+
+            <p>
+                দ্বীনি শিক্ষা, দাওয়াত ও কল্যাণমূলক কাজে সুন্দর একটি
+                পরিবেশ তৈরি করা।
+            </p>
+
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <div class="card-icon">☪</div>
+
+                <h3>ইসলামিক শিক্ষা</h3>
+
+                <p>
+                    কুরআন ও সুন্নাহভিত্তিক সঠিক জ্ঞান মানুষের মাঝে
+                    সহজভাবে পৌঁছে দেওয়ার চেষ্টা।
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-icon">📖</div>
+
+                <h3>দাওয়াত</h3>
+
+                <p>
+                    সুন্দর ও উত্তম পদ্ধতিতে ইসলামের শিক্ষা ও
+                    দাওয়াত প্রচারে সহযোগিতা করা।
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-icon">🤝</div>
+
+                <h3>কল্যাণমূলক কাজ</h3>
+
+                <p>
+                    সমাজে ভালো কাজ, সহযোগিতা ও মানবিক মূল্যবোধ
+                    বৃদ্ধিতে উৎসাহ প্রদান।
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ACTIVITIES ================= -->
+
+<section class="activities" id="activities">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>আমাদের কার্যক্রম</h2>
+
+            <div class="line"></div>
+
+            <p>
+                দ্বীনি শিক্ষা ও সচেতনতামূলক বিভিন্ন কার্যক্রমের
+                মাধ্যমে মানুষের কাছে পৌঁছানোর চেষ্টা।
+            </p>
+
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <div class="card-icon">🕌</div>
+
+                <h3>দ্বীনি শিক্ষা</h3>
+
+                <p>
+                    ইসলামিক বিষয় সম্পর্কে প্রয়োজনীয় ও
+                    শিক্ষামূলক তথ্য প্রকাশ।
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-icon">🎓</div>
+
+                <h3>শিক্ষামূলক কনটেন্ট</h3>
+
+                <p>
+                    সহজ ভাষায় ইসলামিক শিক্ষা ও সচেতনতামূলক
+                    কনটেন্ট তৈরি ও প্রচার।
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-icon">📢</div>
+
+                <h3>দাওয়াতি কার্যক্রম</h3>
+
+                <p>
+                    ভালো কথা ও ইসলামের শিক্ষা মানুষের কাছে
+                    পৌঁছে দেওয়ার উদ্যোগ।
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NOTICE ================= -->
+
+<section class="notice-section" id="notice">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>📢 নোটিশ</h2>
+
+            <div class="line"></div>
+
+            <p>
+                ফাউন্ডেশনের গুরুত্বপূর্ণ ঘোষণা ও আপডেট এখানে
+                প্রকাশ করা হবে।
+            </p>
+
+        </div>
+
+        <div class="notice-box" id="publicNotices">
+
+            <!-- JavaScript will load notices here -->
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>আমাদের গ্যালারি</h2>
+
+            <div class="line"></div>
+
+            <p>
+                আমাদের বিভিন্ন ইসলামিক ও শিক্ষামূলক কার্যক্রমের
+                নির্বাচিত ছবি।
+            </p>
+
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <img
+                    src="https://i.ibb.co.com/hJq1p9MN/file-00000000c534820bbbd7bce125fd2e4d.png"
+                    alt="Gallery"
+                    style="border-radius:12px;"
+                >
+
+            </div>
+
+            <div class="card">
+
+                <img
+                    src="https://i.ibb.co.com/3gn9bC2/file-000000004a5481fd9a93105292e0ffe8.png"
+                    alt="Gallery"
+                    style="border-radius:12px;"
+                >
+
+            </div>
+
+            <div class="card">
+
+                <img
+                    src="https://i.ibb.co.com/1gFvtk3/file-00000000293881fabb3dea2bf16a314e.png"
+                    alt="Gallery"
+                    style="border-radius:12px;"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MEMBER CTA ================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <h2>
+                আমাদের সাথে যুক্ত হোন
+            </h2>
+
+            <p>
+                দ্বীনি শিক্ষা ও কল্যাণমূলক কার্যক্রমে অংশ নিতে
+                আমাদের সদস্য আবেদন ফর্ম পূরণ করুন।
+            </p>
+
+            <a
+                class="btn btn-gold"
+                href="https://forms.gle/nwmoKYUkD34GhVwb9"
+            >
+                সদস্য আবেদন করুন
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SOCIAL ================= -->
+
+<section class="social" id="social">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>আমাদের অফিসিয়াল মাধ্যম</h2>
+
+            <div class="line"></div>
+
+            <p>
+                আমাদের সাথে যুক্ত থাকতে অফিসিয়াল মাধ্যমগুলো
+                অনুসরণ করুন।
+            </p>
+
+        </div>
+
+        <div class="social-grid">
+
+            <!-- FACEBOOK -->
+
+            <a
+                class="social-card"
+                href="https://www.facebook.com/share/1Dq1GSkU8U/"
+                aria-label="Facebook Page"
+            >
+
+                <div class="social-icon facebook-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                        <path
+                            fill="currentColor"
+                            d="M24 12.07C24 5.46 18.63.1 12 .1S0 5.46 0 12.07c0 5.99 4.39 10.95 10.13 11.9v-8.42H7.08v-3.48h3.05V9.41c0-3.01 1.79-4.68 4.53-4.68 1.31 0 2.68.24 2.68.24v2.95h-1.51c-1.49 0-1.96.93-1.96 1.88v2.27h3.33l-.53 3.48h-2.8v8.42C19.61 23.02 24 18.06 24 12.07z"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+                <div>
+
+                    <h3>Facebook Page</h3>
+
+                    <p>অফিসিয়াল Facebook Page</p>
+
+                </div>
+
+            </a>
+
+
+            <!-- WHATSAPP -->
+
+            <a
+                class="social-card"
+                href="https://whatsapp.com/channel/0029Vb8kiFA8fewhRr1hQL38"
+                aria-label="WhatsApp Channel"
+            >
+
+                <div class="social-icon whatsapp-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                        <path
+                            fill="currentColor"
+                            d="M20.52 3.48A11.83 11.83 0 0012.08 0C5.55 0 .24 5.3.24 11.84c0 2.09.55 4.13 1.6 5.92L.14 24l6.39-1.67a11.86 11.86 0 005.55 1.41h.01c6.53 0 11.84-5.31 11.84-11.84 0-3.17-1.23-6.15-3.41-8.42zM12.09 21.7h-.01a9.82 9.82 0 01-5.01-1.37l-.36-.21-3.79.99 1.01-3.69-.23-.38a9.84 9.84 0 01-1.51-5.2C2.19 6.42 6.62 2 12.08 2c2.65 0 5.14 1.03 7.01 2.9a9.86 9.86 0 012.9 7.02c0 5.46-4.44 9.88-9.9 9.88zm5.42-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+                <div>
+
+                    <h3>WhatsApp Channel</h3>
+
+                    <p>অফিসিয়াল WhatsApp Channel</p>
+
+                </div>
+
+            </a>
+
+
+            <!-- TELEGRAM -->
+
+            <a
+                class="social-card"
+                href="https://t.me/+phQYLRj6gS1lN2Jl"
+                aria-label="Telegram Group"
+            >
+
+                <div class="social-icon telegram-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                        <path
+                            fill="currentColor"
+                            d="M23.5 3.2L20.02 20.8c-.26 1.24-.94 1.55-1.9.97l-5.25-3.87-2.53 2.44c-.28.28-.52.52-1.07.52l.38-5.34 9.72-8.78c.42-.38-.09-.59-.65-.21L6.7 14.1 1.52 12.48c-1.13-.35-1.15-1.13.24-1.67L22.01 3c.93-.34 1.74.22 1.49.2z"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+                <div>
+
+                    <h3>Telegram Group</h3>
+
+                    <p>অফিসিয়াল Telegram Group</p>
+
+                </div>
+
+            </a>
+
+
+            <!-- TIKTOK -->
+
+            <a
+                class="social-card"
+                href="https://www.tiktok.com/@alinab.islamik.faundeson"
+                aria-label="TikTok"
+            >
+
+                <div class="social-icon tiktok-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                        <path
+                            fill="currentColor"
+                            d="M21.5 7.1c-1.9 0-3.7-.6-5.1-1.8v8.1c0 3.6-2.9 6.5-6.5 6.5S3.4 17 3.4 13.4s2.9-6.5 6.5-6.5c.3 0 .7 0 1 .1v3.6c-.3-.1-.6-.2-1-.2-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3V2.1h3.5c.3 1.7 1.7 3 3.6 3.2v1.8z"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+                <div>
+
+                    <h3>TikTok</h3>
+
+                    <p>অফিসিয়াল TikTok Account</p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>সাধারণ জিজ্ঞাসা</h2>
+
+            <div class="line"></div>
+
+        </div>
+
+        <div class="faq-list">
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    আল ইনাব ইসলামিক ফাউন্ডেশনের উদ্দেশ্য কী?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    ইসলামের সঠিক শিক্ষা, দাওয়াত ও কল্যাণমূলক
+                    কার্যক্রম মানুষের মাঝে পৌঁছে দেওয়া।
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    কীভাবে সদস্য হওয়া যাবে?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    আমাদের সদস্য আবেদন ফর্ম পূরণ করে আবেদন করতে
+                    পারবেন।
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    অফিসিয়াল আপডেট কোথায় পাব?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    আমাদের Facebook, WhatsApp Channel, Telegram
+                    এবং TikTok-এর মাধ্যমে আপডেট পেতে পারেন।
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>যোগাযোগ</h2>
+
+            <div class="line"></div>
+
+            <p>
+                যেকোনো প্রয়োজনে আমাদের অফিসিয়াল যোগাযোগ মাধ্যমে
+                যোগাযোগ করুন।
+            </p>
+
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <h3>অফিসিয়াল যোগাযোগ</h3>
+
+                <div class="contact-row">
+                    <span>📱</span>
+                    <strong>01577783621</strong>
+                </div>
+
+                <a
+                    class="btn btn-gold"
+                    href="https://wa.me/8801577783621"
+                >
+                    WhatsApp-এ যোগাযোগ
+                </a>
+
+            </div>
+
+            <div class="contact-card">
+
+                <h3>সদস্য আবেদন</h3>
+
+                <p style="color:#65766f;margin-bottom:15px;">
+                    আল ইনাব ইসলামিক ফাউন্ডেশনের সাথে যুক্ত হতে
+                    সদস্য আবেদন ফর্ম পূরণ করুন।
+                </p>
+
+                <a
+                    class="btn btn-white"
+                    href="https://forms.gle/nwmoKYUkD34GhVwb9"
+                >
+                    আবেদন ফর্ম খুলুন
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <div class="footer-brand">
+
+                    <img
+                        src="https://img.sanishtech.com/u/a6e7173247d01c723d9457b977d103da.png"
+                        alt="Logo"
+                    >
+
+                    <span>আল ইনাব ইসলামিক ফাউন্ডেশন</span>
+
+                </div>
+
+                <p>
+                    ইসলামের সঠিক শিক্ষা, দাওয়াত ও কল্যাণমূলক
+                    কার্যক্রম মানুষের মাঝে পৌঁছে দেওয়ার প্রত্যয়ে।
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3 style="color:#fff;margin-bottom:12px;">
+                    দ্রুত লিংক
+                </h3>
+
+                <div class="footer-links">
+
+                    <a href="#home">হোম</a>
+                    <a href="#about">আমাদের সম্পর্কে</a>
+                    <a href="#activities">কার্যক্রম</a>
+                    <a href="#notice">নোটিশ</a>
+                    <a href="#social">অফিসিয়াল মাধ্যম</a>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h3 style="color:#fff;margin-bottom:12px;">
+                    সদস্য আবেদন
+                </h3>
+
+                <p style="margin-bottom:15px;">
+                    আমাদের সাথে যুক্ত হতে সদস্য আবেদন করুন।
+                </p>
+
+                <a
+                    class="btn btn-gold"
+                    href="https://forms.gle/nwmoKYUkD34GhVwb9"
+                >
+                    আবেদন করুন
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 আল ইনাব ইসলামিক ফাউন্ডেশন — সর্বস্বত্ব সংরক্ষিত।
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= WHATSAPP FLOAT ================= -->
+
+<a
+    class="whatsapp-float"
+    href="https://wa.me/8801577783621"
+    aria-label="WhatsApp"
+>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+        <path
+            fill="currentColor"
+            d="M20.52 3.48A11.83 11.83 0 0012.08 0C5.55 0 .24 5.3.24 11.84c0 2.09.55 4.13 1.6 5.92L.14 24l6.39-1.67a11.86 11.86 0 005.55 1.41h.01c6.53 0 11.84-5.31 11.84-11.84 0-3.17-1.23-6.15-3.41-8.42zM12.09 21.7h-.01a9.82 9.82 0 01-5.01-1.37l-.36-.21-3.79.99 1.01-3.69-.23-.38a9.84 9.84 0 01-1.51-5.2C2.19 6.42 6.62 2 12.08 2c2.65 0 5.14 1.03 7.01 2.9a9.86 9.86 0 012.9 7.02c0 5.46-4.44 9.88-9.9 9.88zm5.42-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"
+        ></path>
+
+    </svg>
+
+</a>
+
+
+<!-- ================= TOP ================= -->
+
+<button class="top-btn" id="topBtn" aria-label="উপরে যান">
+    ↑
+</button>
+
+
+<!-- ================= ADMIN LOGIN MODAL ================= -->
+
+<div class="modal" id="adminModal">
+
+    <div class="modal-box">
+
+        <button class="close-modal" id="closeAdmin">
+            ×
+        </button>
+
+        <div id="loginArea">
+
+            <h2>Admin Login</h2>
+
+            <p class="modal-subtitle">
+                Admin Panel-এ প্রবেশ করতে password দিন।
+            </p>
+
+            <div class="form-group">
+
+                <label for="adminPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="adminPassword"
+                    autocomplete="off"
+                    placeholder="Password লিখুন"
+                >
+
+            </div>
+
+            <button
+                class="btn btn-gold"
+                id="loginBtn"
+                style="width:100%;"
+            >
+                Admin Panel-এ প্রবেশ
+            </button>
+
+        </div>
+
+
+        <!-- ADMIN PANEL -->
+
+        <div class="admin-panel" id="adminPanel">
+
+            <h2>Admin Panel</h2>
+
+            <p class="modal-subtitle">
+                এখান থেকে Notice প্রকাশ বা মুছে ফেলতে পারবেন।
+            </p>
+
+            <div class="form-group">
+
+                <label for="noticeTitle">
+                    Notice Title
+                </label>
+
+                <input
+                    type="text"
+                    id="noticeTitle"
+                    placeholder="নোটিশের শিরোনাম"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="noticeText">
+                    Notice Details
+                </label>
+
+                <textarea
+                    id="noticeText"
+                    placeholder="নোটিশের বিস্তারিত লিখুন"
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="noticeImage">
+                    Image URL (Optional)
+                </label>
+
+                <input
+                    type="url"
+                    id="noticeImage"
+                    placeholder="https://..."
+                >
+
+            </div>
+
+
+            <div class="admin-actions">
+
+                <button
+                    class="btn btn-gold"
+                    id="publishNotice"
+                >
+                    📢 Notice প্রকাশ
+                </button>
+
+                <button
+                    class="btn btn-white"
+                    id="adminLogout"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+
+            <div class="admin-notices">
+
+                <h3 style="color:#07523f;margin-bottom:12px;">
+                    প্রকাশিত Notice
+                </h3>
+
+                <div id="adminNoticeList"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast" id="toast"></div>
+
+
+<script>
+/* ============================================
+   AL INAB ISLAMIC FOUNDATION
+   MAIN JAVASCRIPT
+============================================ */
+
+
+/* ================= MENU ================= */
+
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.getElementById("nav");
+
+menuBtn.addEventListener("click", function(){
+
+    nav.classList.toggle("show");
+
+});
+
+
+const navLinks = document.querySelectorAll(".nav a");
+
+navLinks.forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        nav.classList.remove("show");
+
+    });
+
+});
+
+
+/* ================= SLIDER ================= */
+
+const slides = document.querySelectorAll(".slide");
+
+let currentSlide = 0;
+
+function showSlide(index){
+
+    slides.forEach(function(slide){
+
+        slide.classList.remove("active");
+
+    });
+
+    slides[index].classList.add("active");
+
+}
+
+
+setInterval(function(){
+
+    currentSlide++;
+
+    if(currentSlide >= slides.length){
+
+        currentSlide = 0;
+
+    }
+
+    showSlide(currentSlide);
+
+},4000);
+
+
+/* ================= FAQ ================= */
+
+const faqButtons = document.querySelectorAll(".faq-question");
+
+faqButtons.forEach(function(button){
+
+    button.addEventListener("click", function(){
+
+        const item = button.parentElement;
+
+        item.classList.toggle("open");
+
+        const symbol = button.querySelector("span");
+
+        if(item.classList.contains("open")){
+
+            symbol.textContent = "−";
+
+        }else{
+
+            symbol.textContent = "+";
+
+        }
+
+    });
+
+});
+
+
+/* ================= TOP BUTTON ================= */
+
+document.getElementById("topBtn").addEventListener("click", function(){
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+});
+
+
+/* ============================================
+   NOTICE SYSTEM
+============================================ */
+
+const NOTICE_STORAGE_KEY = "alinab_foundation_notices";
+
+
+function getNotices(){
+
+    try{
+
+        const saved = localStorage.getItem(NOTICE_STORAGE_KEY);
+
+        if(!saved){
+
+            return [];
+
+        }
+
+        return JSON.parse(saved);
+
+    }catch(error){
+
+        return [];
+
+    }
+
+}
+
+
+function saveNotices(notices){
+
+    localStorage.setItem(
+        NOTICE_STORAGE_KEY,
+        JSON.stringify(notices)
+    );
+
+}
+
+
+function escapeHTML(value){
+
+    const div = document.createElement("div");
+
+    div.textContent = value || "";
+
+    return div.innerHTML;
+
+}
+
+
+/* ================= PUBLIC NOTICE ================= */
+
+function renderPublicNotices(){
+
+    const container =
+        document.getElementById("publicNotices");
+
+    const notices = getNotices();
+
+    container.innerHTML = "";
+
+    if(notices.length === 0){
+
+        container.innerHTML = `
+            <div class="no-notice">
+                বর্তমানে কোনো নতুন নোটিশ প্রকাশ করা হয়নি।
+            </div>
+        `;
+
+        return;
+
+    }
+
+
+    notices.forEach(function(notice){
+
+        const item =
+            document.createElement("div");
+
+        item.className = "notice-item";
+
+
+        let imageHTML = "";
+
+        if(notice.image){
+
+            imageHTML = `
+                <img
+                    src="${escapeHTML(notice.image)}"
+                    alt="Notice Image"
+                    onerror="this.style.display='none';"
+                >
+            `;
+
+        }
+
+
+        item.innerHTML = `
+
+            <h3>
+                ${escapeHTML(notice.title)}
+            </h3>
+
+            <p>
+                ${escapeHTML(notice.text)}
+            </p>
+
+            <div class="notice-date">
+                প্রকাশিত: ${escapeHTML(notice.date)}
+            </div>
+
+            ${imageHTML}
+
+        `;
+
+
+        container.appendChild(item);
+
+    });
+
+}
+
+
+/* ================= ADMIN NOTICE LIST ================= */
+
+function renderAdminNotices(){
+
+    const container =
+        document.getElementById("adminNoticeList");
+
+    const notices = getNotices();
+
+    container.innerHTML = "";
+
+
+    if(notices.length === 0){
+
+        container.innerHTML = `
+            <div class="no-notice">
+                কোনো Notice নেই।
+            </div>
+        `;
+
+        return;
+
+    }
+
+
+    notices.forEach(function(notice,index){
+
+        const item =
+            document.createElement("div");
+
+        item.className = "admin-notice";
+
+
+        item.innerHTML = `
+
+            <h4>
+                ${escapeHTML(notice.title)}
+            </h4>
+
+            <p style="color:#65766f;margin-top:5px;">
+                ${escapeHTML(notice.text)}
+            </p>
+
+            <small style="color:#0b7658;">
+                ${escapeHTML(notice.date)}
+            </small>
+
+            <br>
+
+            <button
+                class="delete-btn"
+                data-index="${index}"
+            >
+                🗑️ Delete
+            </button>
+
+        `;
+
+
+        container.appendChild(item);
+
+    });
+
+
+    const deleteButtons =
+        container.querySelectorAll(".delete-btn");
+
+
+    deleteButtons.forEach(function(button){
+
+        button.addEventListener("click",function(){
+
+            const index =
+                Number(button.getAttribute("data-index"));
+
+            deleteNotice(index);
+
+        });
+
+    });
+
+}
+
+
+/* ================= DELETE NOTICE ================= */
+
+function deleteNotice(index){
+
+    const notices = getNotices();
+
+    notices.splice(index,1);
+
+    saveNotices(notices);
+
+    renderPublicNotices();
+
+    renderAdminNotices();
+
+    showToast("Notice মুছে ফেলা হয়েছে।");
+
+}
+
+
+/* ================= PUBLISH NOTICE ================= */
+
+document
+.getElementById("publishNotice")
+.addEventListener("click",function(){
+
+    const title =
+        document.getElementById("noticeTitle").value.trim();
+
+    const text =
+        document.getElementById("noticeText").value.trim();
+
+    const image =
+        document.getElementById("noticeImage").value.trim();
+
+
+    if(!title){
+
+        showToast("Notice Title লিখুন।");
+
+        return;
+
+    }
+
+
+    if(!text){
+
+        showToast("Notice Details লিখুন।");
+
+        return;
+
+    }
+
+
+    const notices = getNotices();
+
+
+    const newNotice = {
+
+        title:title,
+
+        text:text,
+
+        image:image,
+
+        date:new Date().toLocaleDateString(
+            "bn-BD",
+            {
+                year:"numeric",
+                month:"long",
+                day:"numeric"
+            }
+        )
+
+    };
+
+
+    notices.unshift(newNotice);
+
+    saveNotices(notices);
+
+
+    document.getElementById("noticeTitle").value = "";
+
+    document.getElementById("noticeText").value = "";
+
+    document.getElementById("noticeImage").value = "";
+
+
+    renderPublicNotices();
+
+    renderAdminNotices();
+
+    showToast("Notice সফলভাবে প্রকাশ হয়েছে।");
+
+});
+
+
+/* ============================================
+   ADMIN SYSTEM
+   20 TAPS ANYWHERE
+============================================ */
+
+const ADMIN_PASSWORD =
+    "0987654321@#৳%&*-+()";
+
+let tapCount = 0;
+
+let tapTimer = null;
+
+
+document.addEventListener("click",function(){
+
+    tapCount++;
+
+
+    if(tapTimer){
+
+        clearTimeout(tapTimer);
+
+    }
+
+
+    tapTimer = setTimeout(function(){
+
+        tapCount = 0;
+
+    },3000);
+
+
+    if(tapCount >= 20){
+
+        tapCount = 0;
+
+        openAdminModal();
+
+    }
+
+});
+
+
+/* ================= ADMIN MODAL ================= */
+
+const adminModal =
+    document.getElementById("adminModal");
+
+const closeAdmin =
+    document.getElementById("closeAdmin");
+
+const loginArea =
+    document.getElementById("loginArea");
+
+const adminPanel =
+    document.getElementById("adminPanel");
+
+
+function openAdminModal(){
+
+    adminModal.classList.add("show");
+
+    loginArea.style.display = "block";
+
+    adminPanel.classList.remove("show");
+
+    document.getElementById("adminPassword").value = "";
+
+}
+
+
+function closeAdminModal(){
+
+    adminModal.classList.remove("show");
+
+}
+
+
+closeAdmin.addEventListener(
+    "click",
+    closeAdminModal
+);
+
+
+adminModal.addEventListener("click",function(event){
+
+    if(event.target === adminModal){
+
+        closeAdminModal();
+
+    }
+
+});
+
+
+/* ================= LOGIN ================= */
+
+document
+.getElementById("loginBtn")
+.addEventListener("click",function(){
+
+    const entered =
+        document
+        .getElementById("adminPassword")
+        .value;
+
+
+    if(entered === ADMIN_PASSWORD){
+
+        loginArea.style.display = "none";
+
+        adminPanel.classList.add("show");
+
+        renderAdminNotices();
+
+        showToast("Admin Panel চালু হয়েছে।");
+
+    }else{
+
+        showToast("Password সঠিক নয়।");
+
+    }
+
+});
+
+
+/* ================= ENTER KEY LOGIN ================= */
+
+document
+.getElementById("adminPassword")
+.addEventListener("keydown",function(event){
+
+    if(event.key === "Enter"){
+
+        document.getElementById("loginBtn").click();
+
+    }
+
+});
+
+
+/* ================= LOGOUT ================= */
+
+document
+.getElementById("adminLogout")
+.addEventListener("click",function(){
+
+    loginArea.style.display = "block";
+
+    adminPanel.classList.remove("show");
+
+    document.getElementById("adminPassword").value = "";
+
+    showToast("Admin Panel থেকে Logout হয়েছে।");
+
+});
+
+
+/* ================= TOAST ================= */
+
+let toastTimer = null;
+
+
+function showToast(message){
+
+    const toast =
+        document.getElementById("toast");
+
+    toast.textContent = message;
+
+    toast.classList.add("show");
+
+
+    if(toastTimer){
+
+        clearTimeout(toastTimer);
+
+    }
+
+
+    toastTimer = setTimeout(function(){
+
+        toast.classList.remove("show");
+
+    },2500);
+
+}
+
+
+/* ================= INITIAL LOAD ================= */
+
+renderPublicNotices();
+
+</script>
+
+</body>
+</html>
